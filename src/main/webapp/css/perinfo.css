@@ -1,0 +1,68 @@
+body{
+	font-family: "微软雅黑";
+}
+#header{
+	width: 100%;
+	min-width: 1000px;
+	height: 80px;
+}
+.hd_logo{
+	width: 1000px;
+	height: 80px;
+	margin: 0 auto;
+	padding: 10px 0 10px 0;
+	box-sizing: border-box;
+}
+.hd_logo img{
+	width: auto;
+	height: 60px;
+}
+#nav{
+	width: 600px;
+	margin: 5px auto;
+	margin-bottom: 0;
+	background-color: #fff;
+	border-radius: 12px;
+	padding:10px 0;
+	box-shadow: 0 0 5px 0 #676767;
+}
+.per-title{
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+}
+.layui-img{
+	text-align: center;
+	padding: 5px 0;
+}
+.layui-img img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.layui-input-block span{
+	display: inline-block;
+	height: 36px;
+	line-height: 36px;
+	padding-left: 10px;
+	box-sizing: border-box;
+	font-size: 18px;
+}
+.layui-btn-sub{
+	text-align: center;
+	margin-left: 0!important;
+}
+
+footer{
+	width: 100%;
+	min-width: 1200px;
+	margin-top: 20px;
+	padding: 10px 10px;
+	background-color: #f9f9f9;
+	box-sizing: border-box;
+}
+footer p{
+	text-align: center;
+	padding: 7px 0;
+}

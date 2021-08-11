@@ -1,0 +1,97 @@
+body{
+	font-family: "微软雅黑";
+}
+#header{
+	width: 100%;
+	min-width: 1000px;
+	height: 80px;
+}
+.hd_logo{
+	width: 1000px;
+	height: 80px;
+	margin: 0 auto;
+	padding: 10px 0 10px 0;
+	box-sizing: border-box;
+}
+.hd_logo img{
+	width: auto;
+	height: 60px;
+}
+
+#nav{
+	width: 800px;
+	margin: 5px auto;
+	margin-bottom: 0;
+	background-color: #fff;
+	border-radius: 12px;
+	padding:10px 0;
+	box-shadow: 0 0 5px 0 #676767;
+}
+.per-title{
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+}
+.per-inp{
+	width: 800px;
+	margin: 0 auto;
+	padding: 10px 70px;
+	box-sizing: border-box;
+}
+.layui-form-item .layui-input-inline{
+	width: 160px!important;
+}
+.layui-form-item .dep-select{
+	width: 210px!important;
+}
+.layui-upload-drag{
+	width: 100px!important;
+	height: 100px!important;
+	padding: 0!important;
+	position: relative;
+	cursor: pointer;
+	float: left;
+}
+.layui-upload-drag i{
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	width: 50px;
+	height: 50px;
+	font-size: 18px;
+}
+.layui-upload-drag input{
+	width: 100px;
+	height: 100px;
+	opacity: 0;
+	cursor: pointer;
+	
+}
+.layui-upload-img{
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin-left: 20px;
+	text-align: center;
+}
+.layui-upload-img img{
+	max-width: 100px;
+	max-height: 100px;
+}
+.layui-btn-sub{
+	text-align: center;
+	margin-left: 0!important;
+}
+
+footer{
+	width: 100%;
+	min-width: 1200px;
+	padding: 10px 10px;
+	margin-top: 20px;
+	background-color: #f9f9f9;
+	box-sizing: border-box;
+}
+footer p{
+	text-align: center;
+	padding: 7px 0;
+}

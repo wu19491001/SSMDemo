@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../img/logo.ico" type="image/icon" />
+	<link href="../css/initialization.css" rel="stylesheet" />
+    <link href="../css/login.css" rel="stylesheet" />
+    <title>水管公司-登陆</title>
+</head>
+<body>
+<div id="app">
+	<header id="header">
+		<div class="hd_logo">
+			<a href="login.html">
+				<img src="../img/logo.jpg" title="回到首页" alt="logo"/>
+			</a>
+		</div>
+	</header>
+	<div id="nav">
+		<div class="nav_login">
+			<div class="nav_title">
+				<div class="title_type">
+					<a id="title_np" class="title_type_a">账号密码登录</a>
+					<a id="title_email" class="title_type_a">邮箱登录</a>
+				</div>
+			</div>
+			<div class="nav_logininfo_np">
+				<form>
+				<div class="login_inp">
+					<input id="username" type="text" placeholder="用户名/账号" title="请输入用户名"/>
+					<i class="login_i_name">		
+					</i>
+				</div>
+				<div class="login_inp">
+					<input id="password" type="password" placeholder="密码" title="请输入密码" autocomplete="off"/>
+					<i class="login_i_psd">
+					</i>
+					<i class="login_i_psd_eye">
+					</i>
+					<i class="login_i_psd_eye_y">
+					</i>
+				</div>
+				</form>
+				<div id="login_but_np" class="login_but" title="登录">
+						登录
+				</div>
+				<div class="login_tips clearfix">
+					<a class="forgetpsd_a" href="forgetpsd.html" title="忘记密码">忘记密码？</a>
+					<a class="reg_a" href="reg.html" title="注册新用户">注册新用户</a>
+				</div>
+			</div>
+			<div class="nav_logininfo_email">
+				<form>
+				<div class="login_inp">
+					<input id="email" type="text" placeholder="邮箱" title="请输入邮箱"/>
+					<i class="login_i_email">		
+					</i>
+				</div>
+				<div class="login_inp">
+					<input id="email-check" type="text" placeholder="验证码" title="请输入验证码"/>
+					<i class="login_i_psd">
+					</i>
+					<button id="login_but_emailcaptcha" class="login_i_text" title="发送验证码">发送验证码</button>
+				</div>
+				</form>
+				<div id="login_but_email" class="login_but" title="登录">
+						登录
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--页面底部-->
+	<footer>
+		<p>
+			<a href="javascript:;"><img src="../img/web/copyright-1.png"></a>&nbsp;&nbsp;
+			<a href="javascript:;"><img src="../img/web/copyright-2.png"></a>&nbsp;&nbsp;
+			<a href="https://ss.knet.cn/verifyseal.dll?sn=2010051300100001081&ct=df&a=1&pa=337337" target="_blank"><img src="../img/web/copyright-3.png"></a>&nbsp;&nbsp;
+			<a href="https://www.12377.cn" target="_blank"><img src="../img/web/copyright-4.png"></a>&nbsp;&nbsp;
+			<a href="http://www.bjjubao.org" target="_blank"><img src="../img/web/copyright-5.png"></a>&nbsp;&nbsp;
+		</p>
+	</footer>
+
+</div>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js" ></script>
+<script type="text/javascript" src="../js/jquery-cookie-v1.4.1.js" ></script>
+<script type="text/javascript" src="../layui/layui.js" ></script>
+<script type="text/javascript" src="../js/login.js"></script>
+</body>
+</html>

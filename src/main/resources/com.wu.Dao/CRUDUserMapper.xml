@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--命名空间应该是对应接口的包名+接口名 -->
+<mapper namespace="com.wu.Dao.CRUDUser">
+    <select id="FindAllUser" resultType="com.wu.domain.User">
+        select * from user
+    </select>
+    <select id="FindAllUserLimit" resultType="com.wu.domain.User" parameterType="int">
+        SELECT u.id,u.username,u.truename,u.email,u.createdate,uinfo.department,uinfo.phone,uinfo.sex,uinfo.address,uinfo.birthday,uinfo.head_portrait FROM USER u,userinfo uinfo WHERE u.id=uinfo.u_id LIMIT #{param2} OFFSET #{param1}
+    </select>
+    <select id="FindAllUserCount" resultType="int">
+        select count(*) from user
+    </select>
+    <select id="FindUserByName" resultType="com.wu.domain.User" parameterType="String">
+        select * from user where username=#{username}
+    </select>
+    <select id="FindUserByEmail" resultType="com.wu.domain.User" parameterType="String">
+        select * from user where email=#{email}
+    </select>
+    <select id="FindUserById" resultType="com.wu.domain.User" parameterType="int">
+        SELECT * FROM(SELECT u.id,u.username,u.truename,u.email,u.createdate,uinfo.department,uinfo.phone,uinfo.sex,uinfo.address,uinfo.birthday,uinfo.head_portrait FROM USER u,userinfo uinfo WHERE u.id=uinfo.u_id) c WHERE c.id=#{id}
+    </select>
+    <select id="LoginEmail" resultType="com.wu.domain.User" parameterType="String">
+        select * from user where email=#{email}
+    </select>
+    <select id="LoginUser" resultType="com.wu.domain.User" parameterType="com.wu.domain.User">
+        select * from user where username=#{username} and password=#{password}
+    </select>
+    <update id="UpdateUserPsd"   parameterType="com.wu.domain.User">
+        update user set password=#{password} where username=#{username} and email=#{email}
+    </update>
+    <update id="UpdateUserInfo"   parameterType="com.wu.domain.User">
+        update userinfo set department=#{department},phone=#{phone},sex=#{sex},address=#{address},head_portrait=#{head_portrait},birthday=#{birthday} where u_id=#{id}
+    </update>
+    <insert id="InsertUser"  parameterType="com.wu.domain.User" >
+        <selectKey keyProperty="id" resultType="int" order="AFTER">
+          select @@identity as id
+        </selectKey>
+        insert into  user values (null,#{username},#{password},#{email},#{truename},#{createdate})
+        
+    </insert>
+    <insert id="InsertUserInfo"  parameterType="int" >
+        insert into  userinfo(id,u_id) values (null,#{id})
+    </insert>
+</mapper>

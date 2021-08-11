@@ -1,0 +1,34 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: "microsoft yahei";
+	font-size: 14px;
+}
+input,button{
+	outline: 0;
+	box-sizing: border-box;
+	border:1px solid silver ;
+}
+button{
+	cursor: pointer;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+i,em{
+	font-style: normal;
+	
+}
+li{
+	list-style: none;
+}
+.clearfix::after{
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}

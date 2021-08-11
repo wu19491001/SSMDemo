@@ -1,0 +1,236 @@
+body{
+	font-family: "微软雅黑";
+}
+#header{
+	width: 100%;
+	min-width: 1000px;
+	height: 120px;
+}
+.hd_logo{
+	width: 1000px;
+	height: 120px;
+	margin: 0 auto;
+	padding: 10px 0 10px 0;
+	box-sizing: border-box;
+}
+.hd_logo img{
+	width: auto;
+	height: 100px;
+}
+#nav{
+	width: 100%;
+	min-width: 1000px;
+	height: 600px;
+	padding: 140px 0;
+	box-sizing: border-box;
+	background: url(../img/src=http___pic1.win4000.com_wallpaper_c_57baa5ea61064.jpg&refer=http___pic1.win4000.jpg) center no-repeat;
+}
+.nav_login{
+	width: 500px;
+	height: 320px;
+	margin: 0 auto;
+	background-color: rgb(255,255,255);
+	padding: 20px 0;
+	box-sizing: border-box;
+	border-radius: 14px;
+}
+.nav_title{
+	height: 40px;
+	font-size: 20px;
+	
+}
+.title_type{
+    text-align: center;
+	line-height: 40px;
+}
+.title_type_a{
+	display: inline-block;
+	border-radius: 5px;
+	padding: 0px 10px;
+	cursor: pointer;
+	color:#000;
+}
+.title_type_a:hover{
+	background-color: rgba(0,0,0,.2);
+}
+.nav_logininfo_np,.nav_logininfo_email{
+	width: 350px;
+	margin: 0 auto;
+	display: none;
+}
+.login_inp,.login_inp_text{
+	width: 350px;
+	height: 46px;
+	margin-top: 20px;
+	position: relative;
+}
+.login_check{
+	width: 350px;
+	height: 25px;
+	margin-top: 10px;
+}
+.check_inp{
+	width: 30px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	float: left;
+}
+.check_inp input{
+	vertical-align: middle;
+	transform: scale(1.3);
+}
+.check_i{
+	width: 320px;
+	height: 25px;
+	line-height: 25px;
+	float: left;
+}
+.check_i i{
+	white-space: normal;
+}
+.login_inp input{
+	width: 100%;
+	height: 100%;
+	font-size: 15px;
+	padding: 0 50px 0 50px;
+}
+#email-check{
+	padding: 0 100px 0 50px;
+}
+.login_inp_text input{
+	width: 100%;
+	height: 100%;
+	font-size: 15px;
+	padding: 0 150px 0 50px;
+}
+.login_i_name{
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	width: 30px;
+	height: 30px;
+	display: block;
+	background: url(../img/sprite2.png) 0px -120px ;
+	background-size:120px 240px;
+}
+.login_i_email{
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	width: 30px;
+	height: 30px;
+	display: block;
+	background: url(../img/sprite3.png) 0px -90px ;
+	background-size:120px 240px;
+}
+.login_i_text{
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	height: 30px;
+	padding: 0 5px;
+}
+.login_i_psd{
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	background: url(../img/sprite1.png) -60px -150px;
+	background-size:120px 240px;
+}
+.login_i_psd_eye{
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	background: url(../img/sprite1.png) -60px -120px;
+	background-size:120px 240px;
+	cursor: pointer;
+	
+}
+.login_i_psd_eye:hover{
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	background: url(../img/sprite1.png) -90px -120px;
+	background-size:120px 240px;
+	cursor: pointer;
+}
+.login_i_psd_eye_y{
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	background: url(../img/sprite1.png) 0px -120px;
+	background-size:120px 240px;
+	cursor: pointer;
+	display: none;
+}
+.login_i_psd_eye_y:hover{
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	background: url(../img/sprite1.png) -30px -120px;
+	background-size:120px 240px;
+	cursor: pointer;
+}
+.login_but{
+	width: 100%;
+	height: 40px;
+	margin-top: 20px;
+	background-color: rgba(51,163,220,.9);
+	text-align: center;
+	line-height: 40px;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 18px;
+	color: rgba(0,0,0,.8);
+}
+.login_but:hover{
+	background-color: rgb(51,163,220);
+	color: rgba(0,0,0,.9);
+}
+.login_tips{
+	margin-top: 15px;
+	padding: 5px 20px;
+}
+.login_tips a{
+	font-size: 15px;
+	color: rgba(0,0,0,.6);
+}
+.login_tips a:hover{
+	color: rgba(0,0,0,.8);
+}
+.forgetpsd_a{
+	display: block;
+	float: left;
+}
+.reg_a{
+	display: block;
+	float: right;
+}
+
+
+footer{
+	width: 100%;
+	min-width: 1200px;
+	padding: 50px 10px 0 10px;
+	box-sizing: border-box;
+}
+footer p{
+	text-align: center;
+	padding: 7px 0;
+}

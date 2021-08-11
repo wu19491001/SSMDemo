@@ -1,0 +1,74 @@
+header{
+	width: 500px;
+	height: 120px;
+	margin: 0 auto;
+	padding: 20px 0;
+	box-sizing: border-box;
+}
+header img{
+	width: auto;
+	height: 80px;
+}
+#tools-nav{
+	width: 500px;
+	height: 600px;
+	background-color: rgba(0,0,0,.08);
+	box-shadow: 0 0 0 2px rgba(0,0,0,0.1);
+	margin: 0 auto;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+.cal-title{
+	height: 80px;
+	text-align: center;
+	position: relative;
+	padding: 10px 0;
+	box-sizing: border-box;
+}
+.cal-limg{
+	width: 60px;
+	height: 60px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.cal-rimg{
+	width: 200px;
+	height: 60px;
+}
+.cal-title::after{
+	content: "";
+	width: 400px;
+	height: 1px;
+	background-color: rgba(0,0,0,.2);
+	position: absolute;
+	left: 50px;
+	bottom: 0;
+}
+.cal-view{
+	height: 80px;
+	margin-top: 20px;
+}
+#cal-view-inp{
+	width: 100%;
+	height: 100%;
+	text-align: right;
+	font-size: 36px;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+.cal-edit button{
+	width: 79px;
+	height: 40px;
+	margin-left: 15px;
+	margin-top: 25px;
+	background-color: rgba(0,0,0,.1);
+	cursor: pointer;
+	border-radius: 10px;
+}
+.cal-edit button:hover{
+	background-color: rgba(0,0,0,.15);
+}
+#zero{
+	width: 178px;
+	height: 38px;
+}

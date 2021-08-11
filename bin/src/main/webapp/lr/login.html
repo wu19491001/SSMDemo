@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../img/logo.ico" type="image/icon" />
+	<link href="../css/initialization.css" rel="stylesheet" />
+    <link href="login.css" rel="stylesheet" />
+    <title>水管公司-登陆</title>
+</head>
+<body>
+<div id="app">
+	<header id="header">
+		<div class="hd_logo">
+			<a href="login.html">
+				<img src="../img/logo.jpg" title="回到首页" alt="logo"/>
+			</a>
+		</div>
+	</header>
+	<div id="nav">
+		<div class="nav_login">
+		    <div class="nav_title">
+			    <div class="title_type">
+				    <a id="title_np" class="title_type_a">账号密码登录</a><a id="title_phone" class="title_type_a">邮箱验证登录</a>
+			    </div>
+		    </div>
+			<div class="nav_logininfo_np">
+				<div class="login_inp">
+					<input id="username" type="text" placeholder="用户名/账号" title="请输入用户名"/>
+					<i class="login_i_name">		
+					</i>
+				</div>
+				<div class="login_inp">
+					<input id="password" type="password" placeholder="密码" title="请输入密码"/>
+					<i class="login_i_psd">
+					</i>
+					<i class="login_i_psd_eye">
+					</i>
+					<i class="login_i_psd_eye_y">
+					</i>
+				</div>
+				<div id="login_but_np" class="login_but" title="登录">
+					登录
+				</div>
+				<div class="login_tips clearfix">
+					<a class="forgetpsd_a" href="javascript:;" title="忘记密码">忘记密码？</a>
+					<a class="reg_a" href="javascript:;" title="注册账户">注册账户</a>
+				</div>
+			</div>
+			<div class="nav_logininfo_phone">
+				<div class="login_inp">
+					<input id="email" type="text" placeholder="邮箱" title="请输入邮箱"/>
+					<i class="login_i_email">		
+					</i>
+				</div>
+				<div class="login_inp_text">
+					<input id="password_email" type="text" placeholder="验证码" title="请输入邮箱验证码"/>
+					<i class="login_i_psd">
+					</i>
+					<button class="login_i_text" title="点击发送验证码">
+						发送验证码
+					</button>
+				</div>
+				<div id="login_but_phone" class="login_but" title="登录">
+					登录
+				</div>
+				<div class="login_tips clearfix">
+					<a class="reg_a" href="javascript:;" title="注册账户">注册账户</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer">
+		
+	</footer>
+</div>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js" ></script>
+<script type="text/javascript" src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/icon" />
+	<link href="css/initialization.css" rel="stylesheet" />
+	<link href="layui/css/layui.css" rel="stylesheet" />
+	<link href="swiper-master/package/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+    <title>水管公司-首页</title>
+</head>
+<body>
+<div id="app">
+<header>
+	<div class="layui-fluid">
+		 <div class="layui-row">
+		    <div class="layui-col-md3 layui-col-xs3 sg-hd-row sg-hd-logo">
+				<a href="hindex.html" title="首页"><img src="img/logo.jpg" alt="首页logo"></a>
+		    </div>
+		    <div class="layui-col-md6 layui-col-xs6 sg-hd-row sg-hd-nav">
+				<ul class="layui-nav layui-bg-white" lay-filter="">
+				  <li class="layui-nav-item layui-this"><a href="index.html"><i class="layui-icon layui-icon-home"></i>&nbsp;首页</a></li>
+				  <li class="layui-nav-item"><a href="">公司介绍</a></li>
+				  <li class="layui-nav-item"><a href="">商城</a></li>
+				  <li class="layui-nav-item"><a href="html/oa/oa.html" target="_blank">办公</a></li>
+				  <li class="layui-nav-item">
+				    <a href="javascript:;">娱乐</a>
+				    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+				      <dd><a href="javascript:;" target="_blank">音乐</a></dd>
+				      <dd><a href="javascript:;" target="_blank">影视</a></dd>
+				      <dd><a href="javascript:;" target="_blank">游戏</a></dd>
+				    </dl>
+				  </li>
+				  <li class="layui-nav-item">
+				    <a href="javascript:;">汽车</a>
+				    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+				      <dd><a href="https://www.autohome.com.cn" target="_blank">汽车之家</a></dd>
+				      <dd><a href="https://www.dcdapp.com/download" target="_blank">懂车帝</a></dd>
+				      <dd><a href="https://www.pcauto.com.cn" target="_blank">太平洋汽车</a></dd>
+					  <dd><a href="https://auto.sina.com.cn" target="_blank">新浪汽车</a></dd>
+					  <dd><a href="https://www.yiche.com" target="_blank">易车网</a></dd>
+					  <dd><a href="https://new.qq.com/ch/auto" target="_blank">腾讯汽车</a></dd>
+				    </dl>
+				  </li>
+				  <li class="layui-nav-item">
+					<a href="">工具</a>
+				    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+				      <dd><a href="html/tools/calculator.html" target="_blank">计算器</a></dd>
+				    </dl>
+				  </li>
+				</ul>
+		    </div>
+			<div class="layui-col-md3 layui-col-xs3 sg-hd-row sg-hd-per">
+				<ul class="layui-nav layui-bg-white">
+				  <li class="layui-nav-item">
+				    <a href="">消息<span class="layui-badge">9</span></a>
+				  </li>
+				  <li class="layui-nav-item">
+				    <a href="">
+						<img id="per-img"  class="layui-nav-img"><span id="sg-hd-username"></span>
+					</a>
+				    <dl class="layui-nav-child">
+				      <dd><a href="html/perinfo.html"><i class="layui-icon layui-icon-username"></i>&nbsp;个人中心</a></dd>
+				      <dd><a href="html/editperinfo.html"><i class="layui-icon layui-icon-set-sm"></i>&nbsp;修改信息</a></dd>
+				      <dd><a id="a_quit" href="javascript:;"><i class="layui-icon layui-icon-logout"></i>&nbsp;退出登录</a></dd>
+				    </dl>
+				  </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+<div id="nav">
+	<div class="swiper-container">
+		      <div class="swiper-wrapper">
+		          <div class="swiper-slide">
+		  			<img src="img/3493dd5eff9043d192e1a6b2caa8bbbe.jpg" />
+		  		  </div>
+		          <div class="swiper-slide">
+		  			<img src="img/3906b56cf230469abede58ff4035c740.jpg" />
+		  		  </div>
+		          <div class="swiper-slide">
+		  			<img src="img/4313b9c49fa34163ac639daba24de1d9.jpg" />
+		  		  </div>
+		      </div>
+		      <!-- 如果需要分页器 -->
+		      <div class="swiper-pagination"></div>
+		      <!-- 如果需要导航按钮 -->
+		      <div class="swiper-button-prev"></div>
+		      <div class="swiper-button-next"></div>
+		  
+    </div>
+	<div class="nav-tools">
+		<!--商城-->
+		<div class="nav-tools-shop">
+			<h2 class="tools-title">商城热销</h2>
+			<div>
+				<ul id="shop-ul" class="clearfix">
+					<li class="shop-li">
+						<a href="javascript:;">
+							<p class="shop-img"><img src="img/shop/428_428_2C8F152DCD7C4EC91348F14D5D7B8FC89EF1CA4BA298A57Fmp.png"></p>
+						    <p class="shop-title">HUAWEI Mate 40E 5G</p>
+							<p class="shop-desc">跃见非凡</p>
+							<p class="shop-price">¥4599</p>
+						</a>
+					</li>
+					<li class="shop-li">
+						<a href="javascript:;">
+							<p class="shop-img"><img src="img/shop/428_428_711F9B10AC6F7C28739F8C8F281BE9C8931C9A9CB34DA514mp.png"></p>
+						    <p class="shop-title">FreeBuds 4i</p>
+							<p class="shop-desc">限时优惠100元</p>
+							<p class="shop-price">¥399</p>
+						</a>
+					</li>
+					<li class="shop-li">
+						<a href="javascript:;">
+							<p class="shop-img"><img src="img/shop/428_428_6A0E006F0E79EBE42547FF6412067ADADBDFB2958A0D9CB1mp.png"></p>
+						    <p class="shop-title" title="涡轮六叶剃须刀">涡轮六叶剃须刀</p>
+							<p class="shop-desc">创新六叶刀片</p>
+							<p class="shop-price">¥199</p>
+						</a>
+					</li>
+					<li class="shop-li">
+						<a href="javascript:;">
+							<p class="shop-img"><img src="img/shop/428_428_482BDA6FACA03C04C68F64C23ACEF74C6F6E310E89EAA5B4mp.png"></p>
+						    <p class="shop-title">MateView GT</p>
+							<p class="shop-desc">34英寸 21:9宽屏曲面游戏显示器</p>
+							<p class="shop-price">¥3499</p>
+						</a>
+					</li>
+					<li class="shop-li">
+						<a href="javascript:;">
+							<p class="shop-img"><img src="img/shop/428_428_8DACE3CDC0781A9170D39629F471C117B322A91298D8FF3Fmp.png"></p>
+						    <p class="shop-title">华为路由H6</p>
+							<p class="shop-desc">大户型首选路由 全屋Wi-Fi6+</p>
+							<p class="shop-price">¥1899</p>
+						</a>
+					</li>
+					<li class="shop-li">
+						<a href="javascript:;">
+							<p class="shop-img"><img src="img/shop/428_428_3E4CBDE1F2786A559FB292A742C02DB332C5BFC42F212AA4mp.png"></p>
+						    <p class="shop-title">华为手环 B6 运动版</p>
+							<p class="shop-desc">智能通话手环 3D弧面触控彩屏</p>
+							<p class="shop-price">¥899</p>
+						</a>
+					</li>
+					<li class="shop-li">
+						<a href="javascript:;">
+							<p class="shop-img"><img src="img/shop/428_428_1BF03DFFDA537B9EC251DB7555CA8910CA1926323AB53E85mp.png"></p>
+						    <p class="shop-title">舒华 E3简约时尚智能跑步机SH-T3100-T2</p>
+							<p class="shop-desc">支持HUAWEI HiLink</p>
+							<p class="shop-price">¥1949</p>
+						</a>
+					</li>
+					<li class="shop-li">
+						<a href="javascript:;">
+							<p class="shop-img"><img src="img/shop/428_428_D39492C3364B9FC3D20B35A77C62A205F4E243DC1377793Cmp.png"></p>
+						    <p class="shop-title">HUAWEI 风范双肩包</p>
+							<p class="shop-desc">11.5L 大容量 适用15.6英寸及以下电脑背包</p>
+							<p class="shop-price">¥699</p>
+						</a>
+					</li>
+					<li class="shop-li">
+						<a href="javascript:;">
+							<p class="shop-img"><img src="img/shop/428_428_07FDFB8DE4F2E8BE2410AFC9C90C5097CA02684C835C4CB4mp.png"></p>
+						    <p class="shop-title">HUAWEI MateBook X</p>
+							<p class="shop-desc">13英寸3K触控全面屏</p>
+							<p class="shop-price">¥8999</p>
+						</a>
+					</li>
+					<li class="shop-li">
+						<a href="javascript:;">
+							<p class="shop-img"><img src="img/shop/428_428_1540952549939mp.png"></p>
+						    <p class="shop-title">华为智选 欧普读写台灯</p>
+							<p class="shop-desc">支持HUAWEI HiLink</p>
+							<p class="shop-price">¥168</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--影视-->
+		<div class="nav-tools-video">
+			<h2 class="tools-title">影视</h2>
+			<div>
+				<ul id="video-ul" class="clearfix">
+					<li class="video-li">
+						<a href="javascript:;">
+							<p class="video-img">
+								<img src="img/video/c58f360383034362a9d49eefb9fc16f9.gif">
+								<i class="video-time">12-18期</i>
+							</p>
+						    <p class="video-title">女演员❤️收官！</p>
+							<p class="video-desc">学员挑战《卧虎藏龙》打戏</p>
+						</a>
+					</li>
+					<li class="video-li">
+						<a href="javascript:;">
+							<p class="video-img">
+								<img src="img/video/6ce383cb81264b5881d504c7d4cf405b.jpg">
+								<i class="video-time">02-18期</i>
+							</p>
+						    <p class="video-title">德云社😂放飞自我</p>
+							<p class="video-desc">烧饼曹鹤阳在线蹦迪</p>
+						</a>
+					</li>
+					<li class="video-li">
+						<a href="javascript:;">
+							<p class="video-img">
+								<img src="img/video/b9d815cec4ef4c1d979ccfb34e964b56.jpg">
+								<i class="video-time">共13集</i>
+							</p>
+						    <p class="video-title">对白 第四季</p>
+							<p class="video-desc">文化大咖指点迷津</p>
+						</a>
+					</li>
+					<li class="video-li">
+						<a href="javascript:;">
+							<p class="video-img">
+								<img src="img/video/402d97da009d46bfa26d6ed0006c1317.jpg">
+								<i class="video-time">02-18期</i>
+							</p>
+						    <p class="video-title">非诚勿扰😍孟非嗑糖</p>
+							<p class="video-desc">时尚主编告白AI配对美女</p>
+						</a>
+					</li>
+					<li class="video-li">
+						<a href="javascript:;">
+							<p class="video-img">
+								<img src="img/video/1718bb89af85481594fc39905dc6ad33.jpg">
+								<i class="video-time">02-18期</i>
+							</p>
+						    <p class="video-title">圆桌派 第四季</p>
+							<p class="video-desc">窦文涛语言节目</p>
+						</a>
+					</li>
+					<li class="video-li">
+						<a href="javascript:;">
+							<p class="video-img">
+								<img src="img/video/c8f7e1af9306411bbd83dcccf1583d47.jpg">
+								<i class="video-time">05-18期</i>
+							</p>
+						    <p class="video-title">博人传 火影忍者新时代</p>
+							<p class="video-desc">火影忍者</p>
+						</a>
+					</li>
+					<li class="video-li">
+						<a href="javascript:;">
+							<p class="video-img">
+								<img src="img/video/054F010160B451E6047BD797F3D08214.png">
+								<i class="video-time">3:51</i>
+							</p>
+						    <p class="video-title">尼克斯96-113老鹰</p>
+							<p class="video-desc">特雷杨27+9</p>
+						</a>
+					</li>
+					<li class="video-li">
+						<a href="javascript:;">
+							<p class="video-img">
+								<img src="img/video/6e0f498beb5c482da8c5a0f36e009c85.gif">
+								<i class="video-time">05-12期</i>
+							</p>
+						    <p class="video-title">彗星来了✨绝美恋</p>
+							<p class="video-desc">时空交错引发奇妙缘分</p>
+						</a>
+					</li>
+					<li class="video-li">
+						<a href="javascript:;">
+							<p class="video-img">
+								<img src="img/video/2bc69ae0ede74fd184b0c4af9a334847.gif">
+								<i class="video-time">26集全</i>
+							</p>
+						    <p class="video-title">深海英雄团决战星海城</p>
+							<p class="video-desc">深海英雄团决战星海城</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--汽车-->
+		<div class="nav-tools-car">
+			<h2 class="tools-title">汽车</h2>
+		         <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+		             <ul class="layui-tab-title">
+		                <li class="layui-this">资讯</li>
+		                <li>论坛</li>
+		                <li>图片</li>
+		                <li>视频</li>
+		                <li>金融</li>
+		            </ul>
+		            <div class="layui-tab-content car-content">
+					    <div class="layui-tab-item  car-zixun layui-show">
+							<p>
+								<a href="javascript:;">大众排气故障解析</a>&nbsp;<i class="car-box">丨</i>&nbsp;
+								<a href="javascript:;">高性价比紧凑型SUV</a>
+							</p>
+							<p>
+								<a href="javascript:;">江淮iEVA50换电版上市</a>&nbsp;<i class="car-box">丨</i>&nbsp;
+								<a href="javascript:;">蔚来江淮续签</a>
+							</p>
+							<p>
+								<a href="javascript:;">蔚来汽车成立动力科技公司</a>&nbsp;<i class="car-box">丨</i>&nbsp;
+								<a href="javascript:;">体验全新吉利帝豪</a>
+							</p>
+							<p>
+								<a href="javascript:;">新款北京BJ90谍照</a>&nbsp;<i class="car-box">丨</i>&nbsp;
+								<a href="javascript:;">名爵高层访谈</a>
+							</p>
+							<p>
+								<a href="javascript:;">全新路虎发现要带电了?</a>&nbsp;<i class="car-box">丨</i>&nbsp;
+								<a href="javascript:;">C_Two量产版将首发</a>
+							</p>
+							<p>
+								<a href="javascript:;">开瑞优优新增车型上市</a>&nbsp;<i class="car-box">丨</i>&nbsp;
+								<a href="javascript:;">    一“跃”而过的SUV</a>
+							</p>
+						</div>
+					    <div class="layui-tab-item">内容2</div>
+					    <div class="layui-tab-item">内容3</div>
+					    <div class="layui-tab-item">内容4</div>
+					    <div class="layui-tab-item">
+							<div class="car-cal">
+								<div class="cal-sel">
+									<div class="sel-check">
+										<button id="check-car">选择车型</button>
+									</div>
+									<div class="sel-carimg">
+										<img src="img/car/1024x0_1_q95_autohomecar__ChsFVWAXk7WAJtyZABkfFrBl6vo989.jpg" />
+									</div>
+									<div class="sel-configure">
+										<div class="configure-check">
+										    <span id="car-type">智能版</span>&nbsp;
+										      <select id="configure">
+										        <option value=""></option>
+										        <option value="0">北京</option>
+										        <option value="1">上海</option>
+										        <option value="2">广州</option>
+										        <option value="3">深圳</option>
+										        <option value="4">杭州</option>
+										      </select>
+										  </div>
+										  <div class="car-price-d">
+											  <span>指导价:¥</span>
+											  <span id="car-price">200000</span>
+										  </div>
+									</div>
+								</div>
+								<div class="configure-type">
+										<p class="configure-type-p">首付比例
+										  <span id="configure-tips-bl" class="configure-type-tips">30%</span>
+										</p>
+										<div id="slidebl" class="demo-slider"></div>
+                                        <p class="configure-type-p">贷款期限
+										  <span id="configure-tips-qx" class="configure-type-tips">12期</span>
+										</p>
+										<div id="slideqx" class="demo-slider"></div>
+								</div>
+								<form  class="layui-form" action="">
+									 <div class="layui-form-item">
+									    <p class="configure-type-p">汽车排量
+									    <div class="layui-input-block">
+									      <input type="radio" name="pailiang" value="1.0L(含)以下" title="1.0L(含)以下">
+									      <input type="radio" name="pailiang" value="1.0L-1.6L(含)" title="1.0L-1.6L(含)" checked>
+										  <input type="radio" name="pailiang" value="1.6L-2.0L(含)" title="1.6L-2.0L(含)">
+										  <input type="radio" name="pailiang" value="2.0L-2.5L(含)" title="2.0L-2.5L(含)">
+										  <input type="radio" name="pailiang" value="2.5L-3.0L(含)" title="2.5L-3.0L(含)">
+										  <input type="radio" name="pailiang" value="3.0L-4.0L(含)" title="3.0L-4.0L(含)">
+										  <input type="radio" name="pailiang" value="4.0L以上" title="4.0L以上">
+									    </div>
+									  </div>
+									  <div class="layui-form-item">
+									     <p class="configure-type-p">汽车座位
+									     <div class="layui-input-block">
+									       <input type="radio" name="zuowei" value="5座及以下" title="5座及以下" checked>
+									       <input type="radio" name="zuowei" value="6座及以上" title="6座及以上">
+									     </div>
+									   </div>
+								</form>
+								<div class="car-start-d">
+									<button id="car-start">开始计算</button>
+								</div>
+								<div class="car-info">
+									<table id="tb-carinfo">
+										<tr>
+											<td class="tb-infotype">车型</td>
+											<td class="tb-infocass">超能版</td>
+										</tr>
+										<tr>
+											<td class="tb-infotype">车型</td>
+											<td class="tb-infocass">2021款 双擎 1.8H E-CVT科技版2021款 双擎 1.8H E-CVT科技版</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							
+						</div>
+                    </div>
+				</div>
+		</div> 
+		<!--娱乐-->
+		<div class="nav-tools-play">
+			<h2 class="tools-title">娱乐</h2>
+			<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+			     <ul class="layui-tab-title">
+			        <li class="layui-this">游戏</li>
+			        <li>工具</li>
+			        <li>其它</li>
+			    </ul>
+			    <div class="layui-tab-content play-content">
+				    <div class="layui-tab-item layui-show">
+					</div>
+				    <div class="layui-tab-item">内容2</div>
+				    <div class="layui-tab-item">内容3</div>
+			    </div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--页面底部-->
+<footer>
+	<p>
+		<a href="javascript:;">关于我们</a>&nbsp;&nbsp;
+		<a href="javascript:;">联系我们</a>&nbsp;&nbsp;
+		<a href="javascript:;">Investor Relations</a>&nbsp;&nbsp;
+		<a href="javascript:;">招贤纳士</a>&nbsp;&nbsp;
+		<a href="javascript:;">隐私政策</a>&nbsp;&nbsp;
+		<a href="javascript:;">儿童隐私保护指引</a>&nbsp;&nbsp;
+		<a href="javascript:;"><i class="layui-icon layui-icon-android" style="font-size: 22px;"></i>安卓客户端</a>&nbsp;&nbsp;
+		<a href="javascript:;"><i class="layui-icon layui-icon-ios" style="font-size: 22px;"></i>苹果客户端</a>&nbsp;&nbsp;
+		<a href="javascript:;"><i class="layui-icon layui-icon-windows" style="font-size: 22px;"></i>电脑客户端</a>
+	</p>
+	<p>
+		<a href="javascript:;">京公网安备 110号</a>&nbsp;&nbsp;
+		<a href="javascript:;">广播电视节目制作经营许可证（京）字第0520号</a>&nbsp;&nbsp;
+		<a href="javascript:;">营业执照</a>&nbsp;&nbsp;
+		<a href="javascript:;">京ICP备05201214号-1</a>&nbsp;&nbsp;
+		<a href="javascript:;">信息网络传播视听节目许可证: 0110110</a>
+	</p>
+	<p>
+		<a href="javascript:;">增值电信业务经营许可证：B2-512125</a>&nbsp;&nbsp;
+		<a href="javascript:;">京网文[1994]0025-001号</a>&nbsp;&nbsp;
+		<a href="javascript:;">中国互联网协会会员单位</a>&nbsp;&nbsp;
+		<a href="javascript:;">违法和不良信息举报: 4000666850-2 jubao@shuiguan.com.cn</a>
+	</p>
+	<p>
+		<a href="javascript:;">© 1994-2025 www.shuiguan.com.cn All Rights Reserved. 水管公司 版权所有</a>
+	</p>
+	<p>
+		<a href="javascript:;"><img src="img/web/copyright-1.png"></a>&nbsp;&nbsp;
+		<a href="javascript:;"><img src="img/web/copyright-2.png"></a>&nbsp;&nbsp;
+		<a href="https://ss.knet.cn/verifyseal.dll?sn=2010051300100001081&ct=df&a=1&pa=337337" target="_blank"><img src="img/web/copyright-3.png"></a>&nbsp;&nbsp;
+		<a href="https://www.12377.cn" target="_blank"><img src="img/web/copyright-4.png"></a>&nbsp;&nbsp;
+		<a href="http://www.bjjubao.org" target="_blank"><img src="img/web/copyright-5.png"></a>&nbsp;&nbsp;
+	</p>
+</footer>
+</div>
+<script type="text/javascript" src="js/jquery-3.6.0.min.js" ></script>
+<script type="text/javascript" src="js/jquery-cookie-v1.4.1.js"></script>
+<script type="text/javascript" src="layui/layui.js"></script>
+<script type="text/javascript" src="swiper-master/package/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

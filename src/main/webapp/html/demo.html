@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="UTF-8">
+	    <link rel="shortcut icon" href="../img/logo.ico" type="image/icon" />
+		<link href="../css/initialization.css" rel="stylesheet" />
+		<link href="../layui/css/layui.css" rel="stylesheet" />
+		<link href="../swiper-master/package/swiper-bundle.min.css" rel="stylesheet"/>
+	    <style>
+			#app{
+				width: 1000px;
+				margin: 0 auto;
+				position: relative;
+			}
+			#nav-video{
+				width: 100%;
+				height: auto;
+			}
+			.nav-video-tools{
+				width: 100%;
+				height: 50px;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				background-color: rgba(0,0,0,.8);
+			}
+			.tools-play{
+				float: left;
+				width: 100px;
+				text-align: center;
+				padding: 5px 0;
+				box-sizing: border-box;
+			}
+			.tools-play button{
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				background-color: rgba(255,255,255,.85);
+			}
+			.tools-play button:hover{
+				background-color: rgba(255,255,255,1);
+			}
+			.tools-volume{
+				width: 100px;
+				float: right;
+				text-align: center;
+				padding: 5px 0;
+				box-sizing: border-box;
+			}
+			.tools-volume button{
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				background-color: rgba(255,255,255,.85);
+				font-size: 23px;
+			}
+			.tools-volume button:hover{
+				background-color: rgba(255,255,255,1);
+			}
+		</style>
+	    <title>水管公司-注册</title>
+	</head>
+	<body>
+		<div id="app">
+			<div id="nav">
+				<video id="nav-video" controls="controls" src="../video/04_HelloWorld解释与程序员的设置(5410066).webm"></video>
+				<div class="nav-video-tools">
+					<div class="tools-play">
+						<button id="btn-play">开始</button>
+					</div>
+					<div class="tools-volume">
+						<button id="btn-volumeadd">＋</button>
+						<button id="btn-volumesub">－</button>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	<script type="text/javascript" src="../js/jquery-3.6.0.min.js" ></script>
+	<script type="text/javascript" src="../layui/layui.js" ></script>
+	<script type="text/javascript" src="../swiper-master/package/swiper-bundle.min.js"></script>
+	<script>
+		  $(function(){
+			  $("#btn-play").click(function(){
+				  $("#nav-video")[0].pause();
+			  });
+			  $("#btn-volumeadd").click(function(){
+			  	  let nav_video=$("#nav-video")[0].volume;
+				  console.log(nav_video);
+				  nav_video=nav_video>1?nav_video+=0.1:1;
+				  $("#nav-video")[0].volume=nav_video;
+			  });
+			  $("#btn-volumesub").click(function(){
+			  	  let nav_video=$("#nav-video")[0].volume;
+			  	  nav_video=nav_video!=0?nav_video-=0.1:0;
+			  });
+			  let video_length=Math.ceil($("#nav-video")[0].duration);
+			  let vl_m=Math.floor(video_length/60);
+			  vl_m=vl_m<10?"0"+vl_m:vl_m;
+			  let vl_s=video_length%60;
+			  vl_s=vl_s<10?"0"+vl_s:vl_s;
+			  console.log(vl_m+"："+vl_s);
+		  });
+	</script>
+	</body>
+</html>

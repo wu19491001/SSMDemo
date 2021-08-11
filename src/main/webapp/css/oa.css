@@ -1,0 +1,76 @@
+body{
+	font-family: "微软雅黑";
+}
+header{
+	width: 100%;
+	min-width: 1200px;
+	height: 100px;
+	box-shadow: 0px 2px 4px 1px #FAFAFA;
+}
+.sg-hd-row{
+	height: 100px;
+	background-color: #fff;
+}
+.sg-hd-row:nth-child(2){
+	background-color: #fff;
+}
+.sg-hd-logo{
+	padding: 10px 0;
+	text-align: center;
+}
+.sg-hd-logo img{
+	width: auto;
+	height: 80px;
+}
+.layui-bg-white{
+	background-color: #fff;
+}
+.layui-bg-white a{
+	color: #000000!important;
+}
+.sg-hd-nav{
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	
+}
+.sg-hd-per{
+	padding: 20px 0;
+	text-align: center;
+}
+#sg-hd-username{
+	display: block;
+	width: 80px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	float: right;
+}
+
+
+#nav{
+	width: 1200px;
+	margin: 0 auto;
+}
+.nav-left{
+	width: 200px;
+	float: left;
+}
+.nav-right{
+	width: 1000px;
+	float: right;
+}
+#find-info{
+	width: 950px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+}
+.nav-tools{
+	margin-top: 0!important;
+}
+
+
+.db-tools{
+	height: 50px;
+	background-color: #004E80;
+}

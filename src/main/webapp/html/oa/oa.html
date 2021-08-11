@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="../../img/logo.ico" type="image/icon" />
+		<link href="../../css/initialization.css" rel="stylesheet" />
+		<link href="../../layui/css/layui.css" rel="stylesheet" />
+		<link href="../../css/oa.css" rel="stylesheet" />
+		<title>水管公司-OA系统</title>
+	</head>
+<body>
+<div id="app">
+	<header>
+		<div class="layui-fluid">
+			 <div class="layui-row">
+			    <div class="layui-col-md3 layui-col-xs3 sg-hd-row sg-hd-logo">
+					<a href="../../hindex.html" title="首页"><img src="../../img/logo.jpg" alt="首页logo"></a>
+			    </div>
+			    <div class="layui-col-md6 layui-col-xs6 sg-hd-row sg-hd-nav">
+					<h2>水管公司OA系统</h2>
+			    </div>
+				<div class="layui-col-md3 layui-col-xs3 sg-hd-row sg-hd-per">
+					<ul class="layui-nav layui-bg-white">
+					  <li class="layui-nav-item">
+					    <a href="">消息<span class="layui-badge">9</span></a>
+					  </li>
+					  <li class="layui-nav-item">
+					    <a href="">
+							<img id="per-img" src="../../img/logo_ico.jpg" class="layui-nav-img"><span id="sg-hd-username">yangjie</span>
+						</a>
+					    <dl class="layui-nav-child">
+					      <dd><a href="javascript:;"><i class="layui-icon layui-icon-username"></i>&nbsp;个人中心</a></dd>
+					      <dd><a href="javascript:;"><i class="layui-icon layui-icon-set-sm"></i>&nbsp;修改信息</a></dd>
+					      <dd><a id="a_quit" href="javascript:;"><i class="layui-icon layui-icon-logout"></i>&nbsp;退出登录</a></dd>
+					    </dl>
+					  </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="nav" class="clearfix">
+		<div class="nav-left">
+			<ul class="layui-nav layui-nav-tree layui-inline" lay-filter="oa-tools"">
+			  <li class="layui-nav-item layui-nav-itemed">
+			    <a href="javascript:;">文档查看</a>
+			    <dl class="layui-nav-child">
+			      <dd class="layui-this"><a href="oa.html">文档查看</a></dd>
+			    </dl>
+			  </li>
+			  <li class="layui-nav-item">
+			    <a href="javascript:;">文档起草</a>
+			    <dl class="layui-nav-child">
+			      <dd><a href="oa-create.html">文档起草</a></dd>
+			    </dl>
+			  </li>
+			  <li class="layui-nav-item admin-show">
+			  				  <a href="javascript:;">文档管理</a>
+			  				  <dl class="layui-nav-child">
+			  				    <dd><a href="javascript:;">查看文档类型</a></dd>
+			  				    <dd><a href="javascript:;">查看流程</a></dd>
+			  				  </dl>
+			  </li>
+			  <li class="layui-nav-item">
+				  <a href="javascript:;">部门管理</a>
+				  <dl class="layui-nav-child">
+				    <dd><a href="javascript:;">查看部门</a></dd>
+				    <dd class="admin-show"><a href="javascript:;">新增部门</a></dd>
+				    <dd class="admin-show"><a href="javascript:;">修改部门</a></dd>
+				  </dl>
+			  </li>
+			  <li class="layui-nav-item">
+				  <a href="javascript:;">人员管理</a>
+				  <dl class="layui-nav-child">
+				    <dd><a href="oa-persel.html">查看人员</a></dd>
+				    <dd class="admin-show"><a href="javascript:;">新增人员</a></dd>
+				    <dd class="admin-show"><a href="javascript:;">修改人员</a></dd>
+				  </dl>
+			  </li>
+			</ul>
+		</div>
+		<div class="nav-right">
+			<div id="find-info">
+				<div class="layui-tab layui-tab-brief nav-tools" lay-filter="docDemoTabBrief">
+				  <ul class="layui-tab-title">
+				    <li class="layui-this">待办事宜</li>
+					<li>待阅事宜</li>
+				    <li>已办事宜</li>
+					<li>已阅事宜</li>
+				    <li>归档事宜</li>
+				  </ul>
+				  <div class="layui-tab-content">
+				    <div class="layui-tab-item layui-show">
+						<div class="db-tools">
+							<table class="layui-hide" id="daiban"></table>
+						</div>
+					</div>
+				    <div class="layui-tab-item">内容2</div>
+				    <div class="layui-tab-item">内容3</div>
+				    <div class="layui-tab-item">内容4</div>
+				    <div class="layui-tab-item">内容5</div>
+				  </div>
+				</div> 
+			</div>
+		</div>
+	</div>
+</div>
+
+	
+	
+<script type="text/javascript" src="../../js/jquery-3.6.0.min.js" ></script>
+<script type="text/javascript" src="../../layui/layui.js"></script>
+<script type="text/javascript" src="../../js/jquery-cookie-v1.4.1.js"></script>
+<script type="text/javascript" src="../../js/oa.js"></script>
+</body>
+</html>

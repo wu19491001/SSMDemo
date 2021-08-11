@@ -1,0 +1,49 @@
+$(function(){
+	$("#btn-forgetpsd").click(function(){
+		let username=$("#username").val().trim();
+		if(username==""){
+			layer.msg('请输入用户名',{
+				icon:2,
+				time:1200
+			});
+			return;
+		}
+		let email=$("#email").val().trim();
+		if(email==""){
+			layer.msg('请输入邮箱',{
+				icon:2,
+				time:1200
+			});
+			return;
+		}
+		let password=$("#password").val().trim();
+		let passwordt=$("#passwordt").val().trim();
+		if(password!=passwordt){
+			layer.msg('两次输入密码不一致',{
+				icon:2,
+				time:1200
+			});
+			return;
+		}
+		$.post("../user/updateuserpsd",{
+			username:username,
+			email:email,
+			password:passwordt
+		},function(data){
+			if(data=="success"){
+				layer.msg('密码重置成功',{
+					icon:1,
+					time:1200,
+					end:function(){
+						location.href="login.html";
+					}
+				});
+			}else{
+				layer.msg('密码重置失败，请稍后重试',{
+					icon:2,
+					time:1200
+				});
+			}
+		})
+	});
+});

@@ -1,0 +1,97 @@
+body{
+	font-family: "微软雅黑";
+}
+header{
+	width: 100%;
+	min-width: 1200px;
+	height: 100px;
+	box-shadow: 0px 2px 4px 1px #FAFAFA;
+}
+.sg-hd-row{
+	height: 100px;src: unset;
+	background-color: #fff;
+}
+.sg-hd-row:nth-child(2){
+	background-color: #fff;
+}
+.sg-hd-logo{
+	padding: 10px 0;
+	text-align: center;
+}
+.sg-hd-logo img{
+	width: auto;
+	height: 80px;
+}
+.layui-bg-white{
+	background-color: #fff;
+}
+.layui-bg-white a{
+	color: #000000!important;
+}
+.sg-hd-nav{
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	
+}
+.sg-hd-per{
+	padding: 20px 0;
+	text-align: center;
+}
+#sg-hd-username{
+	display: block;
+	width: 80px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	float: right;
+}
+
+
+#nav{
+	width: 1200px;
+	margin: 0 auto;
+}
+.nav-left{
+	width: 200px;
+	float: left;
+}
+.nav-right{
+	width: 1000px;
+	float: right;
+}
+#qicao-info{
+	width: 950px;
+	padding: 20px 0;
+	margin: 0 auto;
+}
+.qicaotype-select{
+	width: 450px;
+	margin: 0 auto;
+	padding: 10px 0;
+	box-shadow: 0 0 5px 1px rgba(0,0,0,.1);
+	margin-bottom: 20px;
+}
+.layui-form-item{
+	margin-bottom: 0!important;
+}
+.layui-form-label{
+	width: auto!important;
+}
+.layui-form-item .layui-input-inline{
+	width: 220px!important;
+}
+#qicao-select-but{
+	width: 70px;
+	height: 38px;
+	border: 0;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,.15);
+}
+#qicao-select-but:hover{
+	background-color: rgba(0,0,0,.2);
+}
+.qicao-form{
+	height: 200px;
+	border: 1px solid rgba(0,0,0,.1);
+}

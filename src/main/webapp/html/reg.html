@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../img/logo.ico" type="image/icon" />
+	<link href="../css/initialization.css" rel="stylesheet" />
+	<link href="../layui/css/layui.css" rel="stylesheet" />
+    <link href="../css/reg.css" rel="stylesheet" type="text/css"  />
+    <title>水管公司-注册</title>
+</head>
+<body>
+<div id="app">
+	<header id="header">
+		<div class="hd_logo">
+			<a href="login.html">
+				<img src="../img/logo.jpg" title="回到首页" alt="logo"/>
+			</a>
+		</div>
+	</header>
+	<div id="nav">
+		<div class="nav_reg">
+			<div class="nav_reginfo">
+				<h2>新用户注册</h2>
+			</div>
+			<div class="nav_reginfo_np">
+				<form>
+				<div class="reg_inp">	
+					<input id="username" type="text" placeholder="用户名/账号" title="请输入用户名"/>
+					<i class="reg_i_name">		
+					</i>
+					<i class="layui-icon layui-icon-face-smile reg_i_name_c reg_i_name_yes" title="用户名可用">
+					</i>
+					<i class="layui-icon layui-icon-face-cry reg_i_name_c reg_i_name_no" title="用户名不可用">
+					</i>
+				</div>
+				<div class="reg_inp">
+					<input id="password" type="password" placeholder="密码" title="请输入密码" autocomplete="off"/>
+					<i class="reg_i_psd">
+					</i>
+					<i class="layui-icon layui-icon-face-smile reg_i_psd_c reg_i_psd1_yes" title="密码可用">
+					</i>
+					<i class="layui-icon layui-icon-face-cry reg_i_psd_c reg_i_psd1_no" title="密码不一致">
+					</i>
+				</div>
+				<div class="reg_inp">
+					<input id="passwordt" type="password" placeholder="确认密码" title="请再次输入密码" autocomplete="off"/>
+					<i class="reg_i_psd">
+					</i>
+					<i class="layui-icon layui-icon-face-smile reg_i_psd_c reg_i_psd2_yes" title="密码可用">
+					</i>
+					<i class="layui-icon layui-icon-face-cry reg_i_psd_c reg_i_psd2_no" title="密码不一致">
+					</i>
+				</div>
+				<div class="reg_inp">
+					<input id="email" type="text" placeholder="邮箱" title="请输入邮箱"/>
+					<i class="reg_i_email">
+					</i>
+					<i class="layui-icon layui-icon-face-smile reg_i_email_c reg_i_email_yes" title="邮箱可用">
+					</i>
+					<i class="layui-icon layui-icon-face-cry reg_i_email_c reg_i_email_no" title="邮箱不可用">
+					</i>
+				</div>
+				<div class="reg_inp">
+					<input id="truename" type="text" placeholder="真实姓名" title="请输入真实姓名"/>
+					<i class="reg_i_truename">
+					</i>
+				</div>
+				</form>
+				<div id="reg_but_np" class="reg_but" title="注册">
+					注册
+				</div>
+				<div class="reg_tips clearfix">
+					<a class="reg_a" href="login.html" title="登录">已有账户，立即登录</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--页面底部-->
+	<footer>
+		<p>
+			<a href="javascript:;"><img src="../img/web/copyright-1.png"></a>&nbsp;&nbsp;
+			<a href="javascript:;"><img src="../img/web/copyright-2.png"></a>&nbsp;&nbsp;
+			<a href="https://ss.knet.cn/verifyseal.dll?sn=2010051300100001081&ct=df&a=1&pa=337337" target="_blank"><img src="../img/web/copyright-3.png"></a>&nbsp;&nbsp;
+			<a href="https://www.12377.cn" target="_blank"><img src="../img/web/copyright-4.png"></a>&nbsp;&nbsp;
+			<a href="http://www.bjjubao.org" target="_blank"><img src="../img/web/copyright-5.png"></a>&nbsp;&nbsp;
+		</p>
+	</footer>
+</div>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js" ></script>
+<script type="text/javascript" src="../layui/layui.js" ></script>
+<script type="text/javascript" src="../js/reg.js"></script>
+</body>
+</html>
